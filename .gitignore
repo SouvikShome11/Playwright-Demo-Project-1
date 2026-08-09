@@ -2,11 +2,11 @@
 node_modules/
 
 # Environment variables and secrets
-.env
-environment-variables/.env
-environment-variables/.env.*
-!.env.example
-!environment-variables/.env.example
+# .env
+# environment-variables/.env
+# environment-variables/.env.*
+# !.env.example
+# !environment-variables/.env.example
 
 # Playwright generated output
 # /test-results/
