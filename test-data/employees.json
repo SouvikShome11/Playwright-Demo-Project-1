@@ -1,0 +1,10 @@
+[
+  {
+    "firstName": "Souvik",
+    "lastName": "Automation",
+    "employeeId": "EMP{{runId}}",
+    "profilePicturePath": "test-data/assets/profile-picture.png",
+    "jobTitle": "QA Engineer",
+    "employmentStatus": "Full-Time Permanent"
+  }
+]

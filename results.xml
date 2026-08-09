@@ -1,0 +1,54 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="56.642235">
+<testsuite name="auth.setup.ts" timestamp="2026-08-09T01:32:34.697Z" hostname="setup" tests="1" failures="0" skipped="0" time="17.298" errors="0">
+<testcase name="authenticate OrangeHRM user" classname="auth.setup.ts" time="17.298">
+<system-out>
+<![CDATA[07:02:39 [[32minfo[39m] [LoginPage] ▶ Navigate to OrangeHRM Login page
+07:02:39 [[32minfo[39m] [LoginPage] Navigating to: /web/index.php/auth/login
+07:02:53 [[32minfo[39m] [LoginPage] ▶ Login with username: Admin
+07:02:53 [[32minfo[39m] [LoginPage] ▶ Enter username: Admin
+07:02:53 [[32minfo[39m] [LoginPage] ▶ Enter password
+07:02:54 [[32minfo[39m] [LoginPage] ▶ Click Login button
+
+[[ATTACHMENT|test-results\auth.setup.ts-authenticate-OrangeHRM-user-setup\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e\Test_Login.ts" timestamp="2026-08-09T01:32:34.697Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.222" errors="0">
+<testcase name="Login › user can login and land on the home page" classname="e2e\Test_Login.ts" time="29.222">
+<system-out>
+<![CDATA[07:02:57 [[32minfo[39m] [LoginPage] ▶ Navigate to OrangeHRM Login page
+07:02:57 [[32minfo[39m] [LoginPage] Navigating to: /web/index.php/auth/login
+07:03:02 [[32minfo[39m] [LoginPage] ▶ Login with username: Admin
+07:03:02 [[32minfo[39m] [LoginPage] ▶ Enter username: Admin
+07:03:02 [[32minfo[39m] [LoginPage] ▶ Enter password
+07:03:02 [[32minfo[39m] [LoginPage] ▶ Click Login button
+07:03:04 [[32minfo[39m] [SideNavComponent] ▶ Open side nav if collapsed
+07:03:04 [[32minfo[39m] [SideNavComponent] ▶ Side nav → PIM
+07:03:06 [[32minfo[39m] [PersonalInformationPage] ▶ Navigate to PIM Add Employee page
+07:03:06 [[32minfo[39m] [PersonalInformationPage] Navigating to: /web/index.php/pim/addEmployee
+07:03:07 [[32minfo[39m] [AddEmployee] ▶ Enter first name: Souvik
+07:03:07 [[32minfo[39m] [AddEmployee] ▶ Enter last name: Automation
+07:03:07 [[32minfo[39m] [AddEmployee] ▶ Enter employee ID: EMP177180
+07:03:07 [[32minfo[39m] [AddEmployee] ▶ Upload employee profile picture
+07:03:07 [[32minfo[39m] [AddEmployee] ▶ Save employee
+07:03:09 [[32minfo[39m] [PersonalInformationPage] ▶ Navigate to PIM Employee List page
+07:03:09 [[32minfo[39m] [PersonalInformationPage] Navigating to: /web/index.php/pim/viewEmployeeList
+07:03:11 [[32minfo[39m] [EmployeeList] ▶ Search employee by ID: EMP177180
+07:03:12 [[32minfo[39m] [EmployeeList] ▶ Open employee record from search result: EMP177180
+07:03:13 [[32minfo[39m] [EmployeeDetails] ▶ Open employee Job tab
+07:03:14 [[32minfo[39m] [EmployeeDetails] ▶ Select Job Title: QA Engineer
+07:03:15 [[32minfo[39m] [EmployeeDetails] ▶ Select Employment Status: Full-Time Permanent
+07:03:17 [[32minfo[39m] [PersonalInformationPage] ▶ Navigate to PIM Employee List page
+07:03:17 [[32minfo[39m] [PersonalInformationPage] Navigating to: /web/index.php/pim/viewEmployeeList
+07:03:18 [[32minfo[39m] [EmployeeList] ▶ Delete employee with ID: EMP177180
+07:03:18 [[32minfo[39m] [EmployeeList] ▶ Search employee by ID: EMP177180
+07:03:23 [[32minfo[39m] [EmployeeList] ▶ Search deleted employee by ID: EMP177180
+07:03:24 [[32minfo[39m] [HeaderComponent] ▶ Logout
+
+[[ATTACHMENT|test-results\e2e-Test_Login.ts-Login-us-a4048-n-and-land-on-the-home-page-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

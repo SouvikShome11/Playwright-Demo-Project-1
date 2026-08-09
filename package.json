@@ -1,0 +1,39 @@
+{
+  "name": "playwright-demo-e2e-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "dotenvx run -f environment-variables/.env -- playwright test --project=chromium",
+    "test:prod": "dotenvx run -f environment-variables/.env.prod --overload -- playwright test --project=chromium",
+    "test:debug": "dotenvx run -f environment-variables/.env.staging --overload -- PWDEBUG=1 playwright test --project=chromium",
+    "validate": "npm-run-all -l --parallel lint tsc prettier:ci",
+    "lint": "eslint .",
+    "tsc": "tsc",
+    "prettier:ci": "prettier --check .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.0",
+    "typescript": "^5.7.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@dotenvx/dotenvx": "^1.39.0",
+    "@eslint/js": "8.57.0",
+    "@faker-js/faker": "9.9.0",
+    "@types/node": "^26.2.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "4.2.5",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "husky": "^9.1.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.6.2",
+    "tsx": "^4.20.4",
+    "typescript-eslint": "^8.57.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

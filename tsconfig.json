@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "strict": true,
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@baseComponent": ["./lib/ui/base/BaseComponent.ts"],
+      "@baseFixture": ["./lib/fixtures/baseFixture.ts"],
+      "@timeouts": ["./lib/utils/constants/timeouts.ts"],
+      "@env": ["./config/env.ts"],
+      "@routes": ["./config/routes.ts"],
+      "@testDataTypes": ["./test-data/TestDataTypes.ts"]
+    }
+  }
+}
