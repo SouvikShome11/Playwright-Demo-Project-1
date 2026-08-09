@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "tsc": "tsc",
     "prettier:ci": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "clear:artifacts": "rm -rf public reports test-results logs test-artifacts results.xml playwright"
   },
   "dependencies": {
     "@playwright/test": "^1.49.0",
