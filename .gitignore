@@ -9,22 +9,24 @@ node_modules/
 # !environment-variables/.env.example
 
 # Playwright generated output
-# /test-results/
-# /playwright-report/
-# /blob-report/
-# /playwright/.cache/
-# /playwright/.auth/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+reports/
+test-results/
 
 # Reports and logs
-# /allure-results/
-# /allure-report/
-# /reports/
-# /public/
-# results.xml
-# *.log
-# npm-debug.log*
-# yarn-debug.log*
-# yarn-error.log*
+/allure-results/
+/allure-report/
+/reports/
+/public/
+results.xml
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Build and coverage output
 /dist/

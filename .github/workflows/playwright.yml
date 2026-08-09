@@ -49,5 +49,5 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: playwright-report-${{ inputs.environment || 'ci' }}
-          path: playwright-report/
+          path: public/
           retention-days: 30
